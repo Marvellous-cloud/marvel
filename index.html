@@ -3,113 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #f4f4f4;
-            padding: 1rem 0;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            padding: 0 1rem;
-        }
-        nav a:hover {
-            color: #000;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
-        }
-        .main {
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            gap: 20px;
-        }
-        .sidebar {
-            background: #f4f4f4;
-            padding: 1rem;
-        }
-        .main-content {
-            background: #fff;
-            padding: 1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #333;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Your E-commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Logo and search bar -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="about" class="main">
-            <div class="sidebar">
-                <h2>About Me</h2>
-                <p>Insert your bio and information here.</p>
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <h1>Welcome to Your Store</h1>
+            <p>Discover our latest collection of products</p>
+            <a href="#" class="cta-button">Shop Now</a>
+        </section>
+        
+        <!-- Featured products -->
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Description of Product 1</p>
+                <span>$99.99</span>
+                <button>Add to Cart</button>
             </div>
-            <div class="main-content">
-                <h2>Skills</h2>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Description of Product 2</p>
+                <span>$79.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Information about your company and mission.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
                 <ul>
-                    <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <!-- Add more skills -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-        </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <!-- Your portfolio items here -->
-            <div class="portfolio-item">
-                <h3>Project Title</h3>
-                <p>Description of the project.</p>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +1234567890</p>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your E-commerce Store. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
