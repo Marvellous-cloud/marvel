@@ -3,80 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your E-commerce Store</title>
+    <title>Your Name - Writer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header #logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 10px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header #logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        /* Main section styles */
+        .main-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .main-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #666666;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header #logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            header nav ul li {
+                margin: 0 5px;
+            }
+
+            .main-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .main-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Navigation bar -->
+        <div id="logo">
+            <img src="logo.jpg" alt="Your Name - Writer Portfolio">
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <!-- Logo and search bar -->
-        <div class="logo">
-            <img src="logo.jpg" alt="Logo">
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </div>
     </header>
-    <main>
-        <!-- Hero section -->
-        <section class="hero">
-            <h1>Welcome to Your Store</h1>
-            <p>Discover our latest collection of products</p>
-            <a href="#" class="cta-button">Shop Now</a>
-        </section>
-        
-        <!-- Featured products -->
-        <section class="featured-products">
-            <h2>Featured Products</h2>
-            <div class="product">
-                <img src="product1.jpg" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>Description of Product 1</p>
-                <span>$99.99</span>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="product2.jpg" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>Description of Product 2</p>
-                <span>$79.99</span>
-                <button>Add to Cart</button>
-            </div>
-        </section>
-    </main>
+
+    <section class="main-section">
+        <h1>Your Name</h1>
+        <p>Writer &amp; Author</p>
+        <p>Welcome to my portfolio website. Here you can explore my writings and learn more about my journey as a writer.</p>
+    </section>
+
     <footer>
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h3>About Us</h3>
-                <p>Information about your company and mission.</p>
-            </div>
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact">
-                <h3>Contact Us</h3>
-                <p>Email: contact@example.com</p>
-                <p>Phone: +1234567890</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Your E-commerce Store. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
